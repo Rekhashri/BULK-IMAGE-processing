@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+<body>
+  <h1>BULK IMAGE Processing</h1>
+  <div class="container">
+    <div class="box">
+      <img id="imagePreview" src="../static/file.jpeg" alt="Uploaded Image" />
+      <p id="fileCount" style="display: none;"></p>
+      <a id="uploadLink" onclick="uploadImages()">Click to upload files</a>
+      <input type="file" id="imageUpload" accept="image/*" hidden multiple />
+    </div>
+    <button class="start-button" onclick="startProcessing()">Start Processing</button>
+    <div id="summary"></div> <!-- This div will contain the summary report -->
+    <div id="reports"></div> <!-- This div will contain the detailed reports -->
+    <div class="pagination" id="pagination"></div> <!-- Pagination controls -->
+  </div>
+  <script src="../static/script.js"></script>
+</body>
+</html>
